@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JS squares</title>
+    </head>
+    <body>
+        <div id = "div1">
+            <input type = "number" id = "num">
+            <button onclick="sqfunc()">Compute</button>
+        </div>
+
+        <script>
+            var n = document.getElementById("num");
+            var d = document.getElementById("div1");
+            var output = document.createTextNode();
+            function sqfunc()
+            {
+                for(i=1;i<=n.value;i++)
+                {
+                    var txt = document.createTextNode(String(i) + " ");
+                    var sq = document.createTextNode(String(Math.pow(i,2)));
+                    output.appendChild(txt);
+                    output.appendChild(sq);
+                    output.appendChild(document.createElement("br"));
+                }
+                alert("abcd");            
+            }
+        </script>
+    </body>
+</html> 
